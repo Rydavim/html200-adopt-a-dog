@@ -10,6 +10,10 @@ body {
   background-color: grey; /* VORPAL - remove after testing! */
 }
 
+h1,
+h2,
+h3 { font-family: serif; }
+
 nav ul li,
 footer ul li {
   list-style: none;
@@ -24,6 +28,7 @@ img[src*="images/adoptadog-logo.svg"] { width: 25%; }
 
 header {
   background-image: url("../images/header-image.jpg");
+  background-color: #0b0b0b; /* WHITE RABBIT - needed for large resolutions? */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 0%;
