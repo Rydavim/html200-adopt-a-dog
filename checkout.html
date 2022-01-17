@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AdoptADog &#124; Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://kit.fontawesome.com/eb88b68bb7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/adoptadog-logo.svg" alt="A white dog silhouette logo.">
+      <h1>Seattle's premiere dog adoption agency</h1>
+      <img src="images/cart-icon.svg" alt="A white shopping cart icon.">
+      <p>$1,234.56</p>
+      <button type="button">Checkout</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Checkout</h2>
+      <form method="GET">
+        <label>Name
+          <input type="text" name="name">
+        </label>
+        <label>Email Address
+          <input type="email" name="email">
+        </label>
+        <label>Street Address
+          <input type="text" name="streetAddress">
+        </label>
+        <label>City
+          <input type="text" name="city">
+        </label>
+        <label>State
+          <select name="state">
+            <option value="AL">Alabama</option>
+          	<option value="AK">Alaska</option>
+          	<option value="AZ">Arizona</option>
+          	<option value="AR">Arkansas</option>
+          	<option value="CA">California</option>
+          	<option value="CO">Colorado</option>
+          	<option value="CT">Connecticut</option>
+          	<option value="DE">Delaware</option>
+          	<option value="DC">District Of Columbia</option>
+          	<option value="FL">Florida</option>
+          	<option value="GA">Georgia</option>
+          	<option value="HI">Hawaii</option>
+          	<option value="ID">Idaho</option>
+          	<option value="IL">Illinois</option>
+          	<option value="IN">Indiana</option>
+          	<option value="IA">Iowa</option>
+          	<option value="KS">Kansas</option>
+          	<option value="KY">Kentucky</option>
+          	<option value="LA">Louisiana</option>
+          	<option value="ME">Maine</option>
+          	<option value="MD">Maryland</option>
+          	<option value="MA">Massachusetts</option>
+          	<option value="MI">Michigan</option>
+          	<option value="MN">Minnesota</option>
+          	<option value="MS">Mississippi</option>
+          	<option value="MO">Missouri</option>
+          	<option value="MT">Montana</option>
+          	<option value="NE">Nebraska</option>
+          	<option value="NV">Nevada</option>
+          	<option value="NH">New Hampshire</option>
+          	<option value="NJ">New Jersey</option>
+          	<option value="NM">New Mexico</option>
+          	<option value="NY">New York</option>
+          	<option value="NC">North Carolina</option>
+          	<option value="ND">North Dakota</option>
+          	<option value="OH">Ohio</option>
+          	<option value="OK">Oklahoma</option>
+          	<option value="OR">Oregon</option>
+          	<option value="PA">Pennsylvania</option>
+          	<option value="RI">Rhode Island</option>
+          	<option value="SC">South Carolina</option>
+          	<option value="SD">South Dakota</option>
+          	<option value="TN">Tennessee</option>
+          	<option value="TX">Texas</option>
+          	<option value="UT">Utah</option>
+          	<option value="VT">Vermont</option>
+          	<option value="VA">Virginia</option>
+          	<option value="WA">Washington</option>
+          	<option value="WV">West Virginia</option>
+          	<option value="WI">Wisconsin</option>
+          	<option value="WY">Wyoming</option>
+          </select>
+        </label>
+        <label>Zip Code
+          <input type="text" name="zipCode">
+        </label>
+        <fieldset>
+          <legend>First Time Adopter?</legend>
+          <label>
+            <input type="radio" name="firstTime" value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="firstTime" value="no">
+            No
+          </label>
+        </fieldset>
+        <label>Pickup Location
+          <select name="pickupLocation">
+            <option value="location1">Location 1</option>
+            <option value="location2">Location 2</option>
+            <option value="location3">Location 3</option>
+          </select>
+        </label>
+        <!-- Placeholder - How do I put in calculated html in a form? -->
+        <h3>Dogs Adopted</h3>
+        <div class="checkout-card">
+          <img src="images/duffy-checkout.jpg" alt="A white-faced tan patchy dog with blue eyes sitting.">
+          <h3>Duffy</h3>
+          <p><em>Cost to Adopt</em>: $123.45</p>
+        </div>
+        <div class="checkout-card">
+          <img src="images/lucas-checkout.jpg" alt="A black dog with bright amber eyes.">
+          <h3>Lucas</h3>
+          <p><em>Cost to Adopt</em>: $123.45</p>
+        </div>
+        <h3>Total Adoption Cost</h3>
+        <p>Placeholder for Calculated Values</p>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+
+    <footer>
+      <img src="images/adoptadog-logo.svg" alt="A white dog silhouette logo.">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>&copy; 2018 Adoptadog, LLC &#124; Seattle, WA</p>
+    </footer>
+  </body>
+</html>
