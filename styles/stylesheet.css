@@ -2,17 +2,20 @@
 
 a:hover { cursor: pointer; }
 
-/* img { max-width: 100%; } */
+.clearfix::after {
+ content: "";
+ clear: both;
+ display: table;
+}
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: grey; /* VORPAL - remove after testing! */
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h2,
-h3 { font-family: serif; } /* TEA TIME - this serif is not being applied? */
+h3 { font-family: 'Merriweather', serif; }
 
 nav ul li,
 footer ul li {
@@ -23,13 +26,35 @@ footer ul li {
 nav a,
 footer a { text-decoration: none; }
 
-img[src*="images/cart-icon.svg"] { height: 2rem; } /* HATTER - use FA here? */
+img[src*="images/cart-icon.svg"] { height: 2rem; }
 img[src*="images/adoptadog-logo.svg"] { width: 25%; }
 
 header {
   background-image: url("../images/header-image.jpg");
-  background-color: #0b0b0b; /* WHITE RABBIT - needed for large resolutions? */
+  background-color: #0b0b0b; /* VORPAL - needed for large resolutions? */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 0%;
 }
+
+main { margin: 3rem 10% 3rem 10%; }
+
+.intro { margin: 1.5rem auto 3rem auto;}
+
+.intro img {
+  float: left;
+  padding-right: 5rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(100% * (1/4) - 2.5%);
+  margin-bottom: 2.5rem;
+}
+
+.card img { width: 100%; }
