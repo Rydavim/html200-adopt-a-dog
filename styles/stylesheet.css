@@ -12,7 +12,7 @@ body {
 
 h1,
 h2,
-h3 { font-family: serif; }
+h3 { font-family: serif; } /* TEA TIME - this serif is not being applied? */
 
 nav ul li,
 footer ul li {
