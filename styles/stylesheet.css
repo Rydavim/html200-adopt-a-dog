@@ -17,6 +17,21 @@ h1,
 h2,
 h3 { font-family: 'Merriweather', serif; }
 
+h2,
+h3,
+nav a { color: #093c60; /* very dark blue */ }
+
+nav {
+  height: 5rem;
+  background-color: #ececec; /* very light cream */
+}
+
+nav ul {
+  padding: 1.75rem 10%;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 nav ul li,
 footer ul li {
   list-style: none;
@@ -29,6 +44,13 @@ footer a { text-decoration: none; }
 img[src*="images/cart-icon.svg"] { height: 2rem; }
 img[src*="images/adoptadog-logo.svg"] { width: 25%; }
 
+button {
+  background-color: #81b741; /* lime green */
+  border: none;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
 header {
   background-image: url("../images/header-image.jpg");
   background-color: #0b0b0b; /* VORPAL - needed for large resolutions? */
@@ -37,7 +59,7 @@ header {
   background-position: 100% 0%;
 }
 
-main { margin: 3rem 10% 3rem 10%; }
+main { margin: 3rem 10%; }
 
 .intro { margin: 1.5rem auto 3rem auto;}
 
@@ -55,6 +77,13 @@ main { margin: 3rem 10% 3rem 10%; }
 .card {
   width: calc(100% * (1/4) - 2.5%);
   margin-bottom: 2.5rem;
+  border: 2px solid #ececec; /* very light cream */
+}
+
+.card > *:not(:first-child) {
+  margin: 1rem;
 }
 
 .card img { width: 100%; }
+
+.card button { width: calc(100% - 2rem) }
