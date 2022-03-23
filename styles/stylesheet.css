@@ -19,33 +19,42 @@ h3 { font-family: 'Merriweather', serif; }
 
 h2,
 h3,
-nav a { color: #093c60; /* very dark blue */ }
+nav a { color: #093C60; /* very dark blue */ }
 
 nav {
   height: 5rem;
-  background-color: #ececec; /* very light cream */
+  background-color: #ECECEC; /* very light cream */
 }
 
 nav ul {
   padding: 1.75rem 10%;
   font-size: 1.25rem;
-  font-weight: bold;
 }
 
 nav ul li,
 footer ul li {
   list-style: none;
   display: inline-block;
+  padding-right: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 nav a,
 footer a { text-decoration: none; }
 
+#nav-checkout {
+  position: absolute;
+  top: 3.5rem;
+  right: 5.5rem;
+}
+
 img[src*="images/cart-icon.svg"] { height: 2rem; }
+
 img[src*="images/adoptadog-logo.svg"] { width: 25%; }
 
 button {
-  background-color: #81b741; /* lime green */
+  background-color: #81B741; /* lime green */
   border: none;
   text-decoration: none;
   padding: 0.5rem;
@@ -53,11 +62,21 @@ button {
 
 header {
   background-image: url("../images/header-image.jpg");
-  background-color: #0b0b0b; /* VORPAL - needed for large resolutions? */
+  background-color: #0B0B0B; /* VORPAL - needed for large resolutions? */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 0%;
+  color: #FFFFFF;
 }
+
+header h1 {
+  max-width: 50%;
+  font-weight: normal;
+  color: #81B741; /* lime green */
+  margin: 0 1.5rem 5.5rem 5.5rem;
+}
+
+img[src="images/adoptadog-logo.svg"] { margin: 3.5rem 1.5rem 0 5.5rem; }
 
 main { margin: 3rem 10%; }
 
@@ -77,13 +96,20 @@ main { margin: 3rem 10%; }
 .card {
   width: calc(100% * (1/4) - 2.5%);
   margin-bottom: 2.5rem;
-  border: 2px solid #ececec; /* very light cream */
+  border: 2px solid #ECECEC; /* very light cream */
 }
 
-.card > *:not(:first-child) {
-  margin: 1rem;
-}
+.card > *:not(:first-child) { margin: 1rem; }
 
 .card img { width: 100%; }
 
 .card button { width: calc(100% - 2rem) }
+
+footer {
+  padding: 1.5rem;
+  background-color: #093C60; /* medium blue */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+footer a { color: inherit; }
