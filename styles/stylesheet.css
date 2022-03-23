@@ -15,11 +15,13 @@ body {
 
 h1,
 h2,
-h3 { font-family: 'Merriweather', serif; }
+h3,
+form { font-family: 'Merriweather', serif; }
 
 h2,
 h3,
-nav a { color: #093C60; /* very dark blue */ }
+nav a,
+form { color: #093C60; /* very dark blue */ }
 
 nav {
   height: 5rem;
@@ -80,9 +82,9 @@ img[src="images/adoptadog-logo.svg"] { margin: 3.5rem 1.5rem 0 5.5rem; }
 
 main { margin: 3rem 10%; }
 
-.intro { margin: 1.5rem auto 3rem auto;}
+.story { margin: 1.5rem auto 3rem auto;}
 
-.intro img {
+.story img {
   float: left;
   padding-right: 5rem;
 }
@@ -104,6 +106,49 @@ main { margin: 3rem 10%; }
 .card img { width: 100%; }
 
 .card button { width: calc(100% - 2rem) }
+
+form { max-width: 60%; }
+
+input[name="name"],
+input[name="email"],
+input[name="streetAddress"] {
+  width: 100%;
+}
+
+.checkout-card {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+input,
+label,
+select {
+  display: block;
+  padding: 1rem 0;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+label > * { margin-top: 0.25rem; }
+
+fieldset {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+fieldset label,
+input[type="radio"] { display: inline; }
+
+.inline-block {
+  display: inline-block;
+  padding: 1.5rem 0.5rem 1.5rem 0;
+}
+
+select,
+input[type="submit"] { padding: 1rem; }
 
 footer {
   padding: 1.5rem;
