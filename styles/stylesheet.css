@@ -1,3 +1,160 @@
-/* for troubleshooting only!! */
-/* body { background-color: tan;}
-img { max-width: 600px; } */
+* { box-sizing: border-box; }
+
+a:hover { cursor: pointer; }
+
+.clearfix::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+form { font-family: 'Merriweather', serif; }
+
+h2,
+h3,
+nav a,
+form { color: #093C60; /* very dark blue */ }
+
+nav {
+  height: 5rem;
+  background-color: #ECECEC; /* very light cream */
+}
+
+nav ul {
+  padding: 1.75rem 10%;
+  font-size: 1.25rem;
+}
+
+nav ul li,
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a,
+footer a { text-decoration: none; }
+
+#nav-checkout {
+  position: absolute;
+  top: 3.5rem;
+  right: 5.5rem;
+}
+
+img[src*="images/cart-icon.svg"] { height: 2rem; }
+
+img[src*="images/adoptadog-logo.svg"] { width: 25%; }
+
+button {
+  background-color: #81B741; /* lime green */
+  border: none;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+header {
+  background-image: url("../images/header-image.jpg");
+  background-color: #0B0B0B; /* VORPAL - needed for large resolutions? */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 0%;
+  color: #FFFFFF;
+}
+
+header h1 {
+  max-width: 50%;
+  font-weight: normal;
+  color: #81B741; /* lime green */
+  margin: 0 1.5rem 5.5rem 5.5rem;
+}
+
+img[src="images/adoptadog-logo.svg"] { margin: 3.5rem 1.5rem 0 5.5rem; }
+
+main { margin: 3rem 10%; }
+
+.story { margin: 1.5rem auto 3rem auto;}
+
+.story img {
+  float: left;
+  padding-right: 5rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(100% * (1/4) - 2.5%);
+  margin-bottom: 2.5rem;
+  border: 2px solid #ECECEC; /* very light cream */
+}
+
+.card > *:not(:first-child) { margin: 1rem; }
+
+.card img { width: 100%; }
+
+.card button { width: calc(100% - 2rem) }
+
+form { max-width: 60%; }
+
+input[name="name"],
+input[name="email"],
+input[name="streetAddress"] {
+  width: 100%;
+}
+
+.checkout-card {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+input,
+label,
+select {
+  display: block;
+  padding: 1rem 0;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+label > * { margin-top: 0.25rem; }
+
+fieldset {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+fieldset label,
+input[type="radio"] { display: inline; }
+
+.inline-block {
+  display: inline-block;
+  padding: 1.5rem 0.5rem 1.5rem 0;
+}
+
+select,
+input[type="submit"] { padding: 1rem; }
+
+footer {
+  padding: 1.5rem;
+  background-color: #093C60; /* medium blue */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+footer a { color: inherit; }

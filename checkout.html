@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>AdoptADog &#124; Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script src="https://kit.fontawesome.com/eb88b68bb7.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header class="clearfix">
       <img src="images/adoptadog-logo.svg" alt="A white dog silhouette logo.">
       <h1>Seattle's premiere dog adoption agency</h1>
-      <img src="images/cart-icon.svg" alt="A white shopping cart icon.">
-      <p>$1,234.56</p>
-      <button type="button">Checkout</button>
+      <div id="nav-checkout">
+        <img src="images/cart-icon.svg" alt="A white shopping cart icon.">
+        <p>$1,234.56</p>
+        <button type="button">Checkout</button>
+      </div>
 
       <nav>
         <ul>
@@ -35,10 +40,10 @@
         <label>Street Address
           <input type="text" name="streetAddress">
         </label>
-        <label>City
+        <label class="inline-block">City
           <input type="text" name="city">
         </label>
-        <label>State
+        <label class="inline-block">State
           <select name="state">
             <option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -93,7 +98,7 @@
           	<option value="WY">Wyoming</option>
           </select>
         </label>
-        <label>Zip Code
+        <label class="inline-block">Zip Code
           <input type="text" name="zipCode">
         </label>
         <fieldset>
