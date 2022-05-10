@@ -1,8 +1,14 @@
-/* I didn't know what to add to make it more responsive than my first draft. */
-
 * { box-sizing: border-box; }
 
 a:hover { cursor: pointer; }
+
+img { max-width: 100%; }
+
+button a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
 
 .clearfix::after {
  content: "";
@@ -59,14 +65,16 @@ img[src*="images/adoptadog-logo.svg"] { width: 25%; }
 
 button {
   background-color: #81B741; /* lime green */
+  color: #ECECEC; /* very light cream */
   border: none;
   text-decoration: none;
   padding: 0.5rem;
+  font-weight: bold;
 }
 
 header {
   background-image: url("../images/header-image.jpg");
-  background-color: #0B0B0B; /* VORPAL - needed for large resolutions? */
+  background-color: #0B0B0B;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 0%;
@@ -84,11 +92,17 @@ img[src="images/adoptadog-logo.svg"] { margin: 3.5rem 1.5rem 0 5.5rem; }
 
 main { margin: 3rem 10%; }
 
+.sidebar a {
+  text-decoration: none;
+  color: #239AB9; /* pale blue */
+}
+
 .story { margin: 1.5rem auto 3rem auto;}
 
+/* WHITE RABBIT - I can't get this to crop/fill like the pdf... */
 .story img {
-  float: left;
-  padding-right: 5rem;
+  /* float: left;
+  padding-right: 5rem; */
 }
 
 .flex-wrapper {
@@ -97,8 +111,19 @@ main { margin: 3rem 10%; }
   justify-content: space-between;
 }
 
+.main-content { width: 70%; }
+.sidebar { width: 25%; }
+
+.see-more { /* HATTER - This is so inelegant... */
+  background-color: #ECECEC; /* very light cream */
+  width: 30%;
+  margin-left: 35%;
+}
+
+.see-more a { color: #093C60; /* very dark blue */ }
+
 .card {
-  width: calc(100% * (1/4) - 2.5%);
+  width: calc(100% * (1/3) - 2.5%);
   margin-bottom: 2.5rem;
   border: 2px solid #ECECEC; /* very light cream */
 }
@@ -160,3 +185,30 @@ footer {
 }
 
 footer a { color: inherit; }
+
+.mobile { display: none; }
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .card { width: calc(100% * (1/2) - 2.5%); }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+  .card { width: 100%; }
+
+  .main-content { width: 100%; }
+  .sidebar { display: none; }
+  .mobile { display: inherit; }
+
+  button.mobile {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2.5rem;
+  }
+
+  button.mobile > a {
+    color: #ECECEC; /* very light cream */
+    display: inline-block;
+  }
+}
