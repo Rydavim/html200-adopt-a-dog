@@ -73,11 +73,9 @@ button {
 }
 
 header {
-  background-image: url("../images/header-image.jpg");
-  background-color: #0B0B0B;
+  background-image: url("../images/header-image.jpg"), linear-gradient(to right, #0B0B0B, #3F3F3F);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100% 0%;
+  background-size: cover;
   color: #FFFFFF;
 }
 
