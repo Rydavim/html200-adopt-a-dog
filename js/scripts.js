@@ -70,10 +70,19 @@ document.addEventListener("DOMContentLoaded", function(event){
   if (form) { // ugly way to differentiate pages
     form.addEventListener('submit', function(event) {
       event.preventDefault();
-      alert('Form Submitted!');
+      alert('Thank you. The form information has been received.');
 
-      
-      console.log(form[i].value);
+      // how to do this for both at once? VORPAL
+      const inputs = document.querySelectorAll('input');
+      const selects = document.querySelectorAll('select');
+
+      for (let i = 0; i < inputs.length; i++) {
+        console.log(inputs[i].value);
+      }
+
+      for (let i = 0; i < selects.length; i++) {
+        console.log(selects[i].value);
+      }
     });
   }
 });
