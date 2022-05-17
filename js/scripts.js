@@ -1,16 +1,22 @@
-document.addEventListener("DOMContentLoaded", function(event){
+$(function(){
   // alert dog's info on photo click
   function dogAlert(name, breed, fees) {
     alert("Name: " + name + "\nBreed: " + breed + "\nFees: " + fees);
   }
 
-  // add adoption fees to total and alert
+  // new cart total jquery on index page
   let cartTotal = 0;
-  function cartAdd(fees) {
-    cartTotal = cartTotal + fees;
-    alert("Cart Total: $" + cartTotal); // how to format with hundredths?
-    return cartTotal;
-  }
+  $('.card button').click(function(){
+    cartTotal = cartTotal + 123.45; // how to strip fees from html? format with hundredths?
+    $('#nav-checkout p').html('$' + cartTotal);
+  })
+
+  // old cart total vanilla js on dogs page
+  // function cartAdd(fees) {
+  //   cartTotal = cartTotal + fees;
+  //   alert("Cart Total: $" + cartTotal); // how to format with hundredths?
+  //   return cartTotal;
+  // }
 
   // blog page article generation
   let blogPosts = [
@@ -64,25 +70,20 @@ document.addEventListener("DOMContentLoaded", function(event){
     }
   }
 
-  // alert on form submission & log values
-  const form = document.getElementById('checkout-form');
-
-  if (form) { // ugly way to differentiate pages
-    form.addEventListener('submit', function(event) {
+  // refactored jquery form logging
+  if ($('form')) { // ugly way to differentiate pages
+    $('form').submit(function(event){
       event.preventDefault();
-      alert('Thank you. The form information has been received.');
 
-      // how to do this for both at once? VORPAL
-      const inputs = document.querySelectorAll('input');
-      const selects = document.querySelectorAll('select');
-
-      for (let i = 0; i < inputs.length; i++) {
-        console.log(inputs[i].value);
-      }
-
-      for (let i = 0; i < selects.length; i++) {
-        console.log(selects[i].value);
-      }
-    });
+      const formInputs = $(this).serializeArray();
+      $.each(formInputs, function(i, currentInput) {
+        console.log(currentInput.value);
+      })
+    })
   }
-});
+
+  // link button to checkout page
+  $('#nav-checkout button').click(function(){
+    window.location.href='checkout.html';
+  })
+}) // end of doc ready
