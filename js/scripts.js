@@ -82,6 +82,15 @@ $(function(){
     })
   }
 
+  // dog tile hover effect
+  $('.card').hover(
+    function() {
+      $(this).children('img').fadeTo('quick', 1);
+    }, function() {
+      $(this).children('img').fadeTo('slow', 0.6);
+    }
+  )
+
   // link button to checkout page
   $('#nav-checkout button').click(function(){
     window.location.href='checkout.html';
