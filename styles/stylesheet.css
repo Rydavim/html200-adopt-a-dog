@@ -202,6 +202,11 @@ footer a { color: inherit; }
   .sidebar { display: none; }
   .mobile { display: inherit; }
 
+  header h1,
+  header img[src="images/adoptadog-logo.svg"] { margin-left: 10%;}
+
+  #nav-checkout { right: 10%; }
+
   button.mobile {
     width: 40%;
     margin-left: 30%;
