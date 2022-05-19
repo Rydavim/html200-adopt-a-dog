@@ -1,0 +1,28 @@
+TESTING
+  User Profiles:
+    Jeff Rogers - 74yo (M)
+    Primary Use: Windows 7 Desktop, Internet Explorer
+    Jeff is a retired veteran who lives alone and is not comfortable with technology. His computer is many years old and he does not own a smartphone. He enjoys gardening and fishing at the local pond. During the COVID-19 pandemic, the isolation caused him to feel lonely. He is looking to adopt a dog for companionship.
+
+    Anne Samson - 34yo (F)
+    Primary Use: OS X Laptop or iOS iPad, Safari
+    Anne is a mother of two young children. While she's technically savvy, her busy schedule and budgeted finances mean her devices are several years old and not updated regularly. She most often has time to browse in the evening and uses her tablet on the couch. She is looking to adopt a pair of dogs that are good with kids.
+
+    Julia Xande - 22yo (F)
+    Primary Use: iOS iPhone, Chrome
+    Julia is a recent college graduate exploring options for her first dog. She spends a lot of time on her smartphone, which is her primary device for browsing. Her phone is new, regularly updated, and uses a non-default browser. She is just starting to research dogs and hasn't decided what she's looking for yet.
+
+    These three user profiles were generated to overlap many common demographics of pet adoption, particularly during the COVID-19 pandemic. Older adults living alone are more vulnerable to loneliness and isolation and can benefit from pet ownership. New families are also likely to explore pet adoption for the benefit of their children. Students just graduating college may lookup adoption information on their phone on a whim to get started. Information should be easily accessible to all of these demographics.
+
+  Testing Devices & Software:
+    Desktop PC - Windows 10 Enterprise - Internet Explorer, Edge
+    Laptop - OS X Monterey - Safari, Firefox, Chrome
+    Tablet - iOS iPad Pro (Old) - Safari
+    Phone - iOS iPhone SE - Safari, Firefox
+    (Remaining Tests on Emulator)
+
+    The website was tested via GitHub pages for use on the above hardware devices. On all devices save the very smallest (in portrait) look and function as expected. Text, controls, and images are aligned appropriately. Some hover effects may be missing from the touch-screen pages. Clickable areas are reasonably sized. Styling is consistent.
+
+    Some tweaks were made to header element positioning to better display on extremely narrow screens.
+
+    Validation tools were used for HTML and CSS. 
