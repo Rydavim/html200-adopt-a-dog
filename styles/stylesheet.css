@@ -128,7 +128,10 @@ main { margin: 3rem 10%; }
 
 .card > *:not(:first-child) { margin: 1rem; }
 
-.card img { width: 100%; }
+.card img {
+  width: 100%;
+  opacity: 0.6;
+}
 
 .card button { width: calc(100% - 2rem) }
 
